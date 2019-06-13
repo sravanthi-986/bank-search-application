@@ -1,0 +1,58 @@
+
+<html>
+<head>
+
+<title>Bank Search</title>
+
+</head>
+
+<body>
+ 
+<ul>
+ 
+{
+    
+pageSize: 5
+   
+pageSizeOptions: [10, 25, 100]
+
+}
+ 
+<li>Mumbai</li>
+ 
+<li>Bangalore</li>
+
+<li>Hyderabad</li>
+ 
+ <li>Delhi</li>
+ 
+ <li>Kolkata</li>
+  
+ <div class="Bank search">
+ 
+ <a class="active" href="#home">Home</a>
+  
+<a href="#bank">bank</a>
+ 
+<input type="text" placeholder="Search..">
+
+</div> 
+
+</ul>
+
+<span style="cursor: hand; text-decoration: underline;" onclick="window.external.AddFavorite(location.href, document.title);">
+Click here to add this page to your favorites</span>
+
+{
+
+url = Banksearch.new(Bank, City).Bank_search_url
+
+ApiRequest.cache(url, Bank search::CACHE_POLICY) do
+
+
+
+
+
+</body>
+
+</html>
